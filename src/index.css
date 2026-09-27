@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --color-floral: #EAADC3;
+  --color-floral-light: #f5cfdd;
+  --color-floral-dark: #d896ae;
+  --color-floral-deep: #24131b;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0c0a0c;
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #EAADC3;
+    color: #24131b;
+  }
+}
+
+/* Floral Theme Button & Accent Utilities (#EAADC3) */
+.btn-floral {
+  background-color: #EAADC3;
+  color: #24131b;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 20px -4px rgba(234, 173, 195, 0.35);
+}
+
+.btn-floral:hover {
+  background-color: #f5cfdd;
+  box-shadow: 0 12px 28px -4px rgba(234, 173, 195, 0.5);
+  transform: translateY(-1px) scale(1.02);
+}
+
+.btn-floral:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.btn-floral-outline {
+  border: 1px solid rgba(234, 173, 195, 0.4);
+  color: #EAADC3;
+  background-color: rgba(234, 173, 195, 0.08);
+  transition: all 0.25s ease;
+}
+
+.btn-floral-outline:hover {
+  background-color: #EAADC3;
+  color: #24131b;
+  border-color: #EAADC3;
+  box-shadow: 0 8px 20px -4px rgba(234, 173, 195, 0.35);
+}
+
+/* 3D Carousel Perspective Container */
+.perspective-carousel {
+  perspective: 1400px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #362830;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #EAADC3;
+}

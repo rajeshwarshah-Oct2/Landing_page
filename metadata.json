@@ -1,0 +1,6 @@
+{
+  "name": "TripForge",
+  "description": "Next-generation expedition planner with 3D destination discovery, interactive itineraries, and real-time social collaboration tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
